@@ -16,14 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGm-Ri-IjU" userLabel="RedView">
-                                <rect key="frame" x="167" y="60" width="80" height="80"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="hGm-Ri-IjU" secondAttribute="height" multiplier="1:1" id="bzu-mg-RUz"/>
-                                    <constraint firstAttribute="height" constant="80" id="sOf-St-cfR"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3W-5k-49u" userLabel="YellowView">
                                 <rect key="frame" x="167" y="160" width="80" height="80"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -46,7 +38,18 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lC-z0-ciC"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGm-Ri-IjU" userLabel="RedView">
+                                <rect key="frame" x="167" y="60" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hGm-Ri-IjU" secondAttribute="height" multiplier="1:1" id="bzu-mg-RUz"/>
+                                    <constraint firstAttribute="height" constant="80" id="sOf-St-cfR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,6 +72,12 @@
                             <constraint firstItem="n0Y-OQ-xu4" firstAttribute="trailing" secondItem="hGm-Ri-IjU" secondAttribute="trailing" id="xPM-UI-MbQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="n0Y-OQ-xu4" id="Pcl-BE-6Qv"/>
+                        <outlet property="redView" destination="hGm-Ri-IjU" id="7gZ-IA-1CA"/>
+                        <outlet property="startButton" destination="Joa-7g-zrL" id="skl-TA-oEe"/>
+                        <outlet property="yellowView" destination="c3W-5k-49u" id="Njk-yV-TiC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
