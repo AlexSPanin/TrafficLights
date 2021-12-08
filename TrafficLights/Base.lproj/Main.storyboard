@@ -52,7 +52,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pressedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lC-z0-ciC"/>
+                                    <action selector="pressedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="OXt-Up-fwb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,10 +69,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenView" destination="n0Y-OQ-xu4" id="Pcl-BE-6Qv"/>
-                        <outlet property="redView" destination="hGm-Ri-IjU" id="7gZ-IA-1CA"/>
-                        <outlet property="startButton" destination="Joa-7g-zrL" id="skl-TA-oEe"/>
-                        <outlet property="yellowView" destination="c3W-5k-49u" id="Njk-yV-TiC"/>
+                        <outlet property="greenView" destination="n0Y-OQ-xu4" id="n5T-XM-Xmg"/>
+                        <outlet property="redView" destination="hGm-Ri-IjU" id="pMu-yo-4QC"/>
+                        <outlet property="startButton" destination="Joa-7g-zrL" id="3YV-dM-Nfh"/>
+                        <outlet property="yellowView" destination="c3W-5k-49u" id="wmO-1Q-zV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

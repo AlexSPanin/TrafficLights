@@ -14,17 +14,22 @@ class ViewController: UIViewController {
     @IBOutlet var greenView: UIView!
     @IBOutlet var startButton: UIButton!
     
+    let ligthOFF = 0.3
+    let ligthON = 1.0
+    
     var counterPressed = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redView.layer.cornerRadius = 35
-        redView.alpha = 0.3
-        yellowView.layer.cornerRadius = 35
-        yellowView.alpha = 0.3
-        greenView.layer.cornerRadius = 35
-        greenView.alpha = 0.3
+        redView.alpha = ligthOFF
+        yellowView.alpha = ligthOFF
+        greenView.alpha = ligthOFF
+        
+        redView.layer.cornerRadius = redView.frame.height / 3
+        yellowView.layer.cornerRadius = yellowView.frame.height / 3
+        greenView.layer.cornerRadius = greenView.frame.height / 3
+
         startButton.setTitle("START", for: .normal)
     }
 
@@ -34,15 +39,15 @@ class ViewController: UIViewController {
             
         switch counterPressed {
         case 1:
-            redView.alpha = 1
+            redView.alpha = ligthON
         case 2:
-            redView.alpha = 0.3
-            yellowView.alpha = 1
+            redView.alpha = ligthOFF
+            yellowView.alpha = ligthON
         case 3:
-            yellowView.alpha = 0.3
-            greenView.alpha = 1
+            yellowView.alpha = ligthOFF
+            greenView.alpha = ligthON
         default:
-            greenView.alpha = 0.3
+            greenView.alpha = ligthOFF
             startButton.setTitle("START", for: .normal)
             counterPressed = 0
             }
