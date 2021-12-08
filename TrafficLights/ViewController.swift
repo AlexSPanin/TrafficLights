@@ -29,26 +29,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pressedButton() {
-            
+            counterPressed += 1
             startButton.setTitle("NEXT", for: .normal)
             switch counterPressed {
-        case 0:
-            redView.alpha = 1
-                counterPressed += 1
         case 1:
+            redView.alpha = 1
+        case 2:
             redView.alpha = 0.3
             yellowView.alpha = 1
-                counterPressed += 1
-        case 2:
+        case 3:
             yellowView.alpha = 0.3
             greenView.alpha = 1
-                counterPressed += 1
-        case 3:
+        default:
             greenView.alpha = 0.3
             startButton.setTitle("START", for: .normal)
             counterPressed = 0
-            default:
-                return
             }
         }
 }
