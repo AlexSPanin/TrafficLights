@@ -19,11 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redView.layer.cornerRadius = 40
+        redView.layer.cornerRadius = 35
         redView.alpha = 0.3
-        yellowView.layer.cornerRadius = 40
+        yellowView.layer.cornerRadius = 35
         yellowView.alpha = 0.3
-        greenView.layer.cornerRadius = 40
+        greenView.layer.cornerRadius = 35
         greenView.alpha = 0.3
         startButton.setTitle("START", for: .normal)
     }
@@ -31,7 +31,8 @@ class ViewController: UIViewController {
     @IBAction func pressedButton() {
             counterPressed += 1
             startButton.setTitle("NEXT", for: .normal)
-            switch counterPressed {
+            
+        switch counterPressed {
         case 1:
             redView.alpha = 1
         case 2:
