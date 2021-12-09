@@ -32,16 +32,12 @@
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="340" id="HWA-CF-B64"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="tzz-Qf-TBV"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joa-7g-zrL">
-                                <rect key="frame" x="147" y="420" width="120" height="60"/>
+                                <rect key="frame" x="157" y="420" width="100" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="BDf-yW-VZV"/>
-                                    <constraint firstAttribute="width" secondItem="Joa-7g-zrL" secondAttribute="height" multiplier="2:1" id="TkT-er-RIf"/>
+                                    <constraint firstAttribute="height" constant="50" id="fXw-kI-5jc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="stw-Mm-ffs"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="fixed">
