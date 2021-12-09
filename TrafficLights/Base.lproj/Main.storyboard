@@ -65,7 +65,6 @@
                             <constraint firstItem="2bk-iC-sRM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.379464" id="V1v-uA-tPV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="Joa-7g-zrL" secondAttribute="centerX" id="ibC-Rp-Kw9"/>
                             <constraint firstItem="2bk-iC-sRM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:224" id="kmL-7j-qyZ"/>
-                            <constraint firstItem="2bk-iC-sRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tyY-jj-cSt"/>
                         </constraints>
                     </view>
                     <connections>
